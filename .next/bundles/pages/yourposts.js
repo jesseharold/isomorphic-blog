@@ -1,9 +1,9 @@
 
           window.__NEXT_REGISTER_PAGE('/yourposts', function() {
             var comp = module.exports =
-webpackJsonp([5],{
+webpackJsonp([6],{
 
-/***/ 540:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37,7 +37,7 @@ var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _link = __webpack_require__(543);
+var _link = __webpack_require__(541);
 
 var _link2 = _interopRequireDefault(_link);
 
@@ -99,7 +99,7 @@ exports.default = _class;
 
 /***/ }),
 
-/***/ 546:
+/***/ 544:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -117,9 +117,13 @@ var _head = __webpack_require__(195);
 
 var _head2 = _interopRequireDefault(_head);
 
-var _Navigation = __webpack_require__(540);
+var _Navigation = __webpack_require__(542);
 
 var _Navigation2 = _interopRequireDefault(_Navigation);
+
+var _Allposts = __webpack_require__(548);
+
+var _Allposts2 = _interopRequireDefault(_Allposts);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -128,44 +132,47 @@ var _jsxFileName = "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\
 // Export an anonymous arrow function
 // which returns the template
 exports.default = function () {
-  return _react2.default.createElement("div", {
-    __source: {
+  return _react2.default.createElement("div", { className: "site-container", __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
   }, _react2.default.createElement(_head2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     }
   }, _react2.default.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     }
   }, "Blog"), _react2.default.createElement("meta", { name: "viewport", content: "initial-scale=1.0, width=device-width", __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     }
   }), _react2.default.createElement("link", { rel: "stylesheet", href: "/static/styles.css", __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     }
   })), _react2.default.createElement(_Navigation2.default, { current: "3", __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     }
   }), _react2.default.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     }
   }, "Harry's Isomorphic Blog"), _react2.default.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     }
-  }, "Your Posts"));
+  }, "Your Posts"), _react2.default.createElement(_Allposts2.default, { author: "me", __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }));
 };
 
  ;(function register() { /* react-hot-loader/webpack */ if (true) { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\pages\\yourposts.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\pages\\yourposts.js"); } } })();
@@ -196,16 +203,98 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 547:
+/***/ 545:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(546);
+module.exports = __webpack_require__(544);
 
+
+/***/ }),
+
+/***/ 548:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _getPrototypeOf = __webpack_require__(38);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(15);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(16);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(41);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(40);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _link = __webpack_require__(541);
+
+var _link2 = _interopRequireDefault(_link);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _jsxFileName = 'C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Allposts.js';
+
+
+var _class = function (_React$Component) {
+    (0, _inherits3.default)(_class, _React$Component);
+
+    function _class() {
+        (0, _classCallCheck3.default)(this, _class);
+
+        return (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).apply(this, arguments));
+    }
+
+    (0, _createClass3.default)(_class, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 7
+                }
+            }, _react2.default.createElement('h3', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 8
+                }
+            }, 'all posts listed here'), _react2.default.createElement('p', { style: { display: this.props.author ? "block" : "none" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 9
+                }
+            }, 'filter by author = ', this.props.author));
+        }
+    }]);
+
+    return _class;
+}(_react2.default.Component);
+
+exports.default = _class;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (true) { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Allposts.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Allposts.js"); } } })();
 
 /***/ })
 
-},[547]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlc1xccGFnZXNcXHlvdXJwb3N0cy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NvbXBvbmVudHMvTmF2aWdhdGlvbi5qcz85MTA5MmVmIiwid2VicGFjazovLy8uL3BhZ2VzL3lvdXJwb3N0cy5qcz85MTA5MmVmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgcmVuZGVyICgpIHtcclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgIDx1bCBjbGFzc05hbWU9XCJtYWluLW5hdmlnYXRpb25cIj5cclxuICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT17dGhpcy5wcm9wcy5jdXJyZW50ID09IFwiMVwiID8gXCJhY3RpdmUtbmF2XCIgOiBcImluYWN0aXZlLW5hdlwifT5cclxuICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvXCI+QWxsIFBvc3RzPC9MaW5rPlxyXG4gICAgICAgICAgICA8L2xpPlxyXG4gICAgICAgICAgICA8bGkgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmN1cnJlbnQgPT0gXCIyXCIgPyBcImFjdGl2ZS1uYXZcIiA6IFwiaW5hY3RpdmUtbmF2XCJ9PlxyXG4gICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi93cml0ZVwiPldyaXRlIGEgUG9zdDwvTGluaz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT17dGhpcy5wcm9wcy5jdXJyZW50ID09IFwiM1wiID8gXCJhY3RpdmUtbmF2XCIgOiBcImluYWN0aXZlLW5hdlwifT5cclxuICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIveW91cnBvc3RzXCI+RWRpdCBZb3VyIFBvc3RzPC9MaW5rPlxyXG4gICAgICAgICAgICA8L2xpPlxyXG4gICAgICAgIDwvdWw+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufVxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyAuL2NvbXBvbmVudHMvTmF2aWdhdGlvbi5qcyIsImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIlxyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCJcclxuaW1wb3J0IE5hdmlnYXRpb24gZnJvbSBcIi4vLi4vY29tcG9uZW50cy9OYXZpZ2F0aW9uLmpzXCJcclxuXHJcbi8vIEV4cG9ydCBhbiBhbm9ueW1vdXMgYXJyb3cgZnVuY3Rpb25cclxuLy8gd2hpY2ggcmV0dXJucyB0aGUgdGVtcGxhdGVcclxuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxyXG4gIDxkaXY+XHJcbiAgICA8SGVhZD5cclxuICAgICAgICA8dGl0bGU+QmxvZzwvdGl0bGU+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxyXG4gICAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiL3N0YXRpYy9zdHlsZXMuY3NzXCIgLz5cclxuICAgIDwvSGVhZD5cclxuICAgIDxOYXZpZ2F0aW9uIGN1cnJlbnQ9XCIzXCIgLz5cclxuICAgIDxoMT5IYXJyeSdzIElzb21vcnBoaWMgQmxvZzwvaDE+XHJcbiAgICA8aDI+WW91ciBQb3N0czwvaDI+XHJcbiAgPC9kaXY+XHJcbilcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9wYWdlcy95b3VycG9zdHMuanM/ZW50cnkiXSwibWFwcGluZ3MiOiI7QTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0E7QUFDQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQ0E7QUFDQTtBQURBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFFQTtBQUFBO0FBQ0E7QUFEQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBRUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUlBOzs7OztBQWZBO0FBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O0FDSkE7QUFDQTs7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7Ozs7OztBQUNBO0FBRUE7QUFBQTtBQUNBOztBQUFBO0FBQ0E7QUFEQTtBQUFBOztBQUNBO0FBQ0E7QUFEQTtBQUFBOztBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQURBO0FBQ0E7QUFBQTtBQUVBO0FBRkE7QUFFQTtBQUFBO0FBQ0E7QUFEQTtBQUNBOztBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUNBO0FBQUE7QUFBQTtBQUFBO0FBVEE7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBIiwic291cmNlUm9vdCI6IiJ9
+},[545]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlc1xccGFnZXNcXHlvdXJwb3N0cy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NvbXBvbmVudHMvTmF2aWdhdGlvbi5qcz83ZWI2YzQzIiwid2VicGFjazovLy8uL3BhZ2VzL3lvdXJwb3N0cy5qcz83ZWI2YzQzIiwid2VicGFjazovLy8uL2NvbXBvbmVudHMvQWxscG9zdHMuanM/N2ViNmM0MyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICAgIHJlbmRlciAoKSB7XHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICA8dWwgY2xhc3NOYW1lPVwibWFpbi1uYXZpZ2F0aW9uXCI+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzc05hbWU9e3RoaXMucHJvcHMuY3VycmVudCA9PSBcIjFcIiA/IFwiYWN0aXZlLW5hdlwiIDogXCJpbmFjdGl2ZS1uYXZcIn0+XHJcbiAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPkFsbCBQb3N0czwvTGluaz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT17dGhpcy5wcm9wcy5jdXJyZW50ID09IFwiMlwiID8gXCJhY3RpdmUtbmF2XCIgOiBcImluYWN0aXZlLW5hdlwifT5cclxuICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvd3JpdGVcIj5Xcml0ZSBhIFBvc3Q8L0xpbms+XHJcbiAgICAgICAgICAgIDwvbGk+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzc05hbWU9e3RoaXMucHJvcHMuY3VycmVudCA9PSBcIjNcIiA/IFwiYWN0aXZlLW5hdlwiIDogXCJpbmFjdGl2ZS1uYXZcIn0+XHJcbiAgICAgICAgICAgICAgICA8TGluayBocmVmPVwiL3lvdXJwb3N0c1wiPkVkaXQgWW91ciBQb3N0czwvTGluaz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICA8L3VsPlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9jb21wb25lbnRzL05hdmlnYXRpb24uanMiLCJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCJcclxuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiXHJcbmltcG9ydCBOYXZpZ2F0aW9uIGZyb20gXCIuLy4uL2NvbXBvbmVudHMvTmF2aWdhdGlvbi5qc1wiXHJcbmltcG9ydCBBbGxwb3N0cyBmcm9tIFwiLi8uLi9jb21wb25lbnRzL0FsbHBvc3RzLmpzXCJcclxuXHJcbi8vIEV4cG9ydCBhbiBhbm9ueW1vdXMgYXJyb3cgZnVuY3Rpb25cclxuLy8gd2hpY2ggcmV0dXJucyB0aGUgdGVtcGxhdGVcclxuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxyXG4gIDxkaXYgY2xhc3NOYW1lPVwic2l0ZS1jb250YWluZXJcIj5cclxuICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5CbG9nPC90aXRsZT5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwiaW5pdGlhbC1zY2FsZT0xLjAsIHdpZHRoPWRldmljZS13aWR0aFwiIC8+XHJcbiAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIvc3RhdGljL3N0eWxlcy5jc3NcIiAvPlxyXG4gICAgPC9IZWFkPlxyXG4gICAgPE5hdmlnYXRpb24gY3VycmVudD1cIjNcIiAvPlxyXG4gICAgPGgxPkhhcnJ5J3MgSXNvbW9ycGhpYyBCbG9nPC9oMT5cclxuICAgIDxoMj5Zb3VyIFBvc3RzPC9oMj5cclxuICAgIDxBbGxwb3N0cyBhdXRob3I9XCJtZVwiIC8+XHJcbiAgPC9kaXY+XHJcbilcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9wYWdlcy95b3VycG9zdHMuanM/ZW50cnkiLCJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICAgIHJlbmRlciAoKSB7XHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgIDxoMz5hbGwgcG9zdHMgbGlzdGVkIGhlcmU8L2gzPlxyXG4gICAgICAgICAgICAgICAgPHAgc3R5bGU9e3tkaXNwbGF5OiB0aGlzLnByb3BzLmF1dGhvciA/IFwiYmxvY2tcIiA6IFwibm9uZVwifX0+ZmlsdGVyIGJ5IGF1dGhvciA9IHt0aGlzLnByb3BzLmF1dGhvcn08L3A+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9jb21wb25lbnRzL0FsbHBvc3RzLmpzIl0sIm1hcHBpbmdzIjoiO0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUdBO0FBQ0E7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUNBO0FBQ0E7QUFEQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBRUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQUE7QUFDQTtBQURBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFJQTs7Ozs7QUFmQTtBQUNBOzs7Ozs7Ozs7Ozs7Ozs7OztBQ0pBO0FBQ0E7OztBQUFBO0FBQ0E7OztBQUFBO0FBQ0E7OztBQUFBO0FBQ0E7Ozs7Ozs7QUFDQTtBQUVBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFEQTtBQUFBOztBQUNBO0FBQ0E7QUFEQTtBQUFBOztBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQURBO0FBQ0E7QUFBQTtBQUVBO0FBRkE7QUFFQTtBQUFBO0FBQ0E7QUFEQTtBQUNBOztBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFBQTtBQUFBOztBQVZBO0FBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUNSQTtBQUNBOzs7QUFBQTtBQUNBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0E7QUFDQTs7QUFBQTtBQUNBO0FBREE7QUFBQTs7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBOzs7OztBQUxBO0FBQ0E7Ozs7Ozs7QSIsInNvdXJjZVJvb3QiOiIifQ==
             return { page: comp.default }
           })
         
