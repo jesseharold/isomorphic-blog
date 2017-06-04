@@ -44,8 +44,7 @@ var Layout = function Layout(props) {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  })), _react2.default.createElement("h1", {
-    __source: {
+  })), _react2.default.createElement("h1", { className: "site-title", __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     }
