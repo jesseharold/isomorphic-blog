@@ -1,20 +1,9 @@
-import React from "react"
-import Head from "next/head"
-import Navigation from "./../components/Navigation.js"
-import Writepost from "./../components/Writepost.js"
+import Writepost from "../components/Writepost.js"
+import Layout from "../components/Layout.js"
 
-// Export an anonymous arrow function
-// which returns the template
 export default () => (
-  <div className="site-container">
-    <Head>
-        <title>Blog</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" href="/static/styles.css" />
-    </Head>
-    <Navigation current="2" />
-    <h1>Harry's Isomorphic Blog</h1>
+  <Layout current="2">
     <h2>Write A Post</h2>
     <Writepost />
-  </div>
+  </Layout>
 )

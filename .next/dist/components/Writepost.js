@@ -34,7 +34,7 @@ var _link2 = _interopRequireDefault(_link);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Navigation.js";
+var _jsxFileName = "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Writepost.js";
 
 
 var _class = function (_React$Component) {
@@ -49,50 +49,43 @@ var _class = function (_React$Component) {
     (0, _createClass3.default)(_class, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("ul", { className: "main-navigation", __source: {
+            return _react2.default.createElement("form", { className: "main-navigation", __source: {
                     fileName: _jsxFileName,
                     lineNumber: 6
                 }
-            }, _react2.default.createElement("li", { className: this.props.current == "1" ? "active-nav" : "inactive-nav", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 7
-                }
-            }, _react2.default.createElement(_link2.default, { href: "/", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 8
-                }
-            }, _react2.default.createElement("a", {
+            }, "Post Title:", _react2.default.createElement("br", {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 8
                 }
-            }, "All Posts"))), _react2.default.createElement("li", { className: this.props.current == "2" ? "active-nav" : "inactive-nav", __source: {
+            }), _react2.default.createElement("input", { type: "text", size: "60", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 9
+                }
+            }), _react2.default.createElement("br", {
+                __source: {
                     fileName: _jsxFileName,
                     lineNumber: 10
                 }
-            }, _react2.default.createElement(_link2.default, { href: "/write", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 11
-                }
-            }, _react2.default.createElement("a", {
+            }), _react2.default.createElement("br", {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 11
                 }
-            }, "New Post"))), _react2.default.createElement("li", { className: this.props.current == "3" ? "active-nav" : "inactive-nav", __source: {
+            }), "Post Body:", _react2.default.createElement("textarea", { cols: "60", rows: "30", style: { display: "block" }, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 13
                 }
-            }, _react2.default.createElement(_link2.default, { href: "/yourposts", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 14
-                }
-            }, _react2.default.createElement("a", {
+            }), _react2.default.createElement("br", {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 14
                 }
-            }, "Edit Posts"))));
+            }), _react2.default.createElement("input", { type: "submit", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 15
+                }
+            }));
         }
     }]);
 

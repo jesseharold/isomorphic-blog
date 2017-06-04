@@ -12,60 +12,48 @@ var _head = require("next\\dist\\lib\\head.js");
 
 var _head2 = _interopRequireDefault(_head);
 
-var _Navigation = require("./../components/Navigation.js");
+var _Navigation = require("./Navigation");
 
 var _Navigation2 = _interopRequireDefault(_Navigation);
 
-var _Allposts = require("./../components/Allposts.js");
-
-var _Allposts2 = _interopRequireDefault(_Allposts);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\pages\\yourposts.js?entry";
+var _jsxFileName = "C:\\Users\\jesse\\Documents\\HarryCode\\learning\\iso-blog\\isomorphic-blog\\components\\Layout.js";
 
-// Export an anonymous arrow function
-// which returns the template
-exports.default = function () {
+
+var Layout = function Layout(props) {
   return _react2.default.createElement("div", { className: "site-container", __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 5
     }
   }, _react2.default.createElement(_head2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 6
     }
   }, _react2.default.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     }
   }, "Blog"), _react2.default.createElement("meta", { name: "viewport", content: "initial-scale=1.0, width=device-width", __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 8
     }
   }), _react2.default.createElement("link", { rel: "stylesheet", href: "/static/styles.css", __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     }
-  })), _react2.default.createElement(_Navigation2.default, { current: "3", __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    }
-  }), _react2.default.createElement("h1", {
+  })), _react2.default.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 11
     }
-  }, "Harry's Isomorphic Blog"), _react2.default.createElement("h2", {
-    __source: {
+  }, "Harry's Isomorphic Blog"), _react2.default.createElement(_Navigation2.default, { current: props.current, __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 12
     }
-  }, "Your Posts"), _react2.default.createElement(_Allposts2.default, { author: "me", __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    }
-  }));
+  }), props.children);
 };
+
+exports.default = Layout;

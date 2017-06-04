@@ -9,6 +9,7 @@ building a simple blog in order to learn about isomorphic/universal react apps u
 ## Links Used for reference:
   * http://lokijs.org/#/
   * https://scotch.io/tutorials/react-universal-with-next-js-server-side-react
+  * https://learnnextjs.com/
   
 ## Desired functionality v 0.1:
    * create, edit, delete post (title, body, author, tags)
