@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const PostLink = (props) => (
-    <Link href={`/post?title=${props.title}`}>
+    <Link as={`/p/${props.slug}`} href={`/post?title=${props.title}`}>
       <a className="post-action-link" style={{display: props.show ? "inline-block" : "none"}}>{props.text}</a>
     </Link>
 )
@@ -21,7 +21,7 @@ export default class extends React.Component {
                 <div className="post-date">date authored</div>
                 <p className="post-text" style={{display: this.props.snippet ? "none" : "block"}}>full text of post</p>
                 <p className="post-text post-snippet" style={{display: this.props.snippet ? "block" : "none"}}>truncated text of post &nbsp;
-                    <PostLink title={this.props.title} text="View Full Post ..." show={!this.props.editable}/>
+                    <PostLink title={this.props.title} slug={this.props.slug} text="View Full Post ..." show={!this.props.editable}/>
                     <PostEditLink title={this.props.title} text="Edit Post" show={this.props.editable}/>
                 </p>
             </div>
